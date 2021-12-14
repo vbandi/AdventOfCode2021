@@ -393,33 +393,6 @@ int PerformStep()
     return cellsToFlash.Count;
 }
 
-// get all neighbors of the given cell
-List<int> GetNeighbors(int[,] map, int i, int j)
-{
-    var result = new List<int>();
-    for (int x = i - 1; x <= i + 1; x++)
-    {
-        for (int y = j - 1; y <= j + 1; y++)
-        {
-            if (x == i && y == j)
-            {
-                continue;
-            }
-            if (x < 0 || x >= map.GetLength(0))
-            {
-                continue;
-            }
-            if (y < 0 || y >= map.GetLength(1))
-            {
-                continue;
-            }
-            result.Add(map[x, y]);
-        }
-    }
-    return result;
-}
-
-
 void DumpMap()
 {
     for (int j = 0; j < map.GetLength(0); j++)
