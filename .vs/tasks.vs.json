@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-Day12",
+      "appliesTo": "Day12/Day12.ipynb",
+      "type": "launch"
+    }
+  ]
+}
